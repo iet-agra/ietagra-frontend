@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import AdmissionModal from '../utils/AdmissionModel';
 
 const Home = () => {
   // Carousel state and logic
