@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AdmissionModal from '../utils/AdmissionModel';
 
 const Home = () => {
   // Carousel state and logic
@@ -51,7 +52,7 @@ const Home = () => {
       description:
         'Dive into the study of electricity, power systems, and electronics with hands-on projects and industry partnerships.',
       icon: '⚡',
-      path: '/',
+      path: '/departments/ee',
       bgColor: 'from-purple-500 to-indigo-500',
     },
     {
@@ -95,6 +96,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Hero Section (using the Hero component) */}
       {/* <Hero /> */}
+      {/* <AdmissionModal /> */}
 
       {/* Carousel Section */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
