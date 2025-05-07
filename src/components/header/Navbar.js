@@ -93,7 +93,7 @@ const Navbar = () => {
               <NavLink to="/" exact>
                 Home
               </NavLink>
-              <NavLink to="/tandpcell">T&P Cell</NavLink>
+              <NavLink to="/tandpcell">Career Excellence Hub</NavLink>
               <NavLink to="/gallery">Gallery</NavLink>
             </div>
           </div>
