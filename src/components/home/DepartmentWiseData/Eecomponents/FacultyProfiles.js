@@ -16,25 +16,25 @@ const FacultyProfiles = () => {
       name: 'Dr. D. Shakina Deiv',
       qualification: 'B.E., M.E., Ph.D.',
       expertise: 'Machine Learning, Speech Processing, Electrical Machines, Power Electronics',
-      image: '', // Add image path when available
+      image: '/images/ee/sakina.png', // Add image path when available
     },
     {
       name: 'Dr. Mayank Pratap Singh',
       qualification: 'B.E., M.Tech., Ph.D.',
       expertise: 'Electrical Machines, Soft Computing, Solar Energy',
-      image: '', // Add image path when available
+      image: '/images/ee/mayank.png', // Add image path when available
     },
     {
       name: 'Er. Ashish Sharma',
       qualification: 'B.Tech., M.Tech.',
       expertise: 'Antenna & Wave Propagation, Instrumentation, Sensors',
-      image: '', // Add image path when available
+      image: '/images/ee/ashish_sharma.png', // Add image path when available
     },
     {
       name: 'Er. Rishabh Upadhyay',
       qualification: 'B.Tech., M.Tech. (Ph.D. Pursuing)',
       expertise: 'Control Systems, Network Analysis and Synthesis',
-      image: '', // Add image path when available
+      image: '/images/ee/rishabh.png', // Add image path when available
     },
   ];
 
