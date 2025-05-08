@@ -31,18 +31,6 @@ const FacultyProfiles = () => {
       image: '', // Add image path when available
     },
     {
-      name: 'Er. Shivam Srivastava',
-      qualification: 'B.Tech., M.Tech.',
-      expertise: 'Power Systems, Power Electronics, SCADA',
-      image: '', // Add image path when available
-    },
-    {
-      name: 'Dr. A. K. Verma',
-      qualification: 'B.Tech., M.Tech., Ph.D.',
-      expertise: 'DSP, Image Processing, Analog & Digital Communication, Control Systems',
-      image: '', // Add image path when available
-    },
-    {
       name: 'Er. Rishabh Upadhyay',
       qualification: 'B.Tech., M.Tech. (Ph.D. Pursuing)',
       expertise: 'Control Systems, Network Analysis and Synthesis',
