@@ -28,7 +28,7 @@ const FacultyProfiles = () => {
       name: 'Er. Ashish Sharma',
       qualification: 'B.Tech., M.Tech.',
       expertise: 'Antenna & Wave Propagation, Instrumentation, Sensors',
-      image: '/images/ee/ashish_sharma.png', // Add image path when available
+      image: '/images/ee/Ashish_sharma.png', // Add image path when available
     },
     {
       name: 'Er. Rishabh Upadhyay',
