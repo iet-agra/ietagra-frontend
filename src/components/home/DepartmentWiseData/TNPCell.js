@@ -12,6 +12,7 @@ const TNPCell = () => {
       <section>
         <PlacementGallery />
       </section>
+
       <section>
         <Contact />
       </section>

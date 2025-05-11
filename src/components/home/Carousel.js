@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { motion } from 'framer-motion';
 
 const placementImages = [
   {
@@ -53,7 +54,7 @@ const PlacementGallery = () => {
         </p>
 
         {/* Carousel Container */}
-        <div className="relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl md:shadow-2xl mx-auto w-full max-w-5xl">
+        <div className="relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl md:shadow-2xl mx-auto w-full max-w-5xl mb-8">
           {/* Main Carousel */}
           <div className="relative h-[250px] xs:h-[300px] sm:h-[350px] md:h-[450px] lg:h-[550px] overflow-hidden">
             {placementImages.map((image, index) => (
@@ -80,12 +81,13 @@ const PlacementGallery = () => {
             ))}
           </div>
 
-          {/* Navigation Arrows - Hidden on smallest screens, visible from small screens up */}
+          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
             className="hidden xs:flex absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/60 text-gray-800 p-1 sm:p-2 rounded-full backdrop-blur-sm transition-all duration-300 items-center justify-center"
             aria-label="Previous slide"
           >
+            {/* Arrow SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"
@@ -107,6 +109,7 @@ const PlacementGallery = () => {
             className="hidden xs:flex absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/60 text-gray-800 p-1 sm:p-2 rounded-full backdrop-blur-sm transition-all duration-300 items-center justify-center"
             aria-label="Next slide"
           >
+            {/* Arrow SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"
@@ -120,6 +123,7 @@ const PlacementGallery = () => {
 
           {/* Swipe Indicator - Only on small screens */}
           <div className="xs:hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white/80 text-xs z-20 flex items-center">
+            {/* Swipe indicators */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-3 w-3 mr-1"
@@ -164,6 +168,42 @@ const PlacementGallery = () => {
               />
             ))}
           </div>
+        </div>
+
+        {/* MOVED: Enhanced "View More" Button - Now below the carousel */}
+        <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-10">
+          <motion.a
+            href="/tandpcell"
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.97 }}
+            className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-500 p-0.5 font-bold shadow-lg transition duration-300 hover:shadow-xl"
+          >
+            <span className="relative flex items-center gap-1 rounded-full bg-gray-900 px-5 py-2.5 transition-all duration-500 ease-in-out group-hover:bg-opacity-0">
+              <span className="relative z-10 text-sm sm:text-base text-white group-hover:text-white">
+                View Placements
+              </span>
+              <motion.svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                initial={{ x: 0 }}
+                whileHover={{ x: 4 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </motion.svg>
+
+              {/* Shine Effect */}
+              <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/20 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full animate-shimmer" />
+            </span>
+          </motion.a>
         </div>
       </div>
     </section>
