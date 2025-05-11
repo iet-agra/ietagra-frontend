@@ -15,15 +15,6 @@ import { fadeIn } from '../../../../utils/animations';
 
 const CivilAbout = () => {
   // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },

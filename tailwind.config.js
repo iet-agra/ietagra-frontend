@@ -10,6 +10,7 @@ module.exports = withMT({
     extend: {
       animation: {
         'gradient-x': 'gradient-x 3s ease infinite',
+        shimmer: 'shimmer 2s infinite',
       },
       keyframes: {
         'gradient-x': {
@@ -21,6 +22,10 @@ module.exports = withMT({
             'background-size': '200% 200%',
             'background-position': 'right center',
           },
+        },
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
     },

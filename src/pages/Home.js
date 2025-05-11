@@ -59,7 +59,7 @@ const Home = () => {
       description:
         'Design and build the infrastructure of tomorrow with sustainable practices and innovative techniques.',
       icon: '🏗️',
-      path: '/',
+      path: '/departments/civil',
       bgColor: 'from-teal-500 to-cyan-400',
     },
     {
@@ -86,7 +86,7 @@ const Home = () => {
       description:
         'Join our vibrant student clubs to explore your interests, develop skills, and make lasting friendships.',
       icon: '🎉',
-      path: '/',
+      path: 'https://ietclubnest.vercel.app/',
       bgColor: 'from-pink-500 to-red-400',
     },
   ];
@@ -234,6 +234,7 @@ const Home = () => {
             <Link
               key={index}
               to={item.path}
+              target="_blank"
               className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white"
             >
               <div
