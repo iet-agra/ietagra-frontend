@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AdmissionModal from '../utils/AdmissionModel';
 
 const Home = () => {
   // Carousel state and logic
@@ -70,6 +71,14 @@ const Home = () => {
       path: '/departments/me',
       bgColor: 'from-blue-500 to-cyan-400',
     },
+    {
+      name: 'Applied Science and Mathematics',
+      description:
+        'Strengthen your foundation in mathematics and science to excel in engineering and technology.',
+      icon: '📐',
+      path: '/',
+      bgColor: 'from-yellow-500 to-orange-400',
+    },
   ];
 
   const ClubandTNPCell = [
@@ -95,7 +104,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Hero Section (using the Hero component) */}
       {/* <Hero /> */}
-      {/* <AdmissionModal /> */}
+      <AdmissionModal />
 
       {/* Carousel Section */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
