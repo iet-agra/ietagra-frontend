@@ -11,6 +11,7 @@ module.exports = withMT({
       animation: {
         'gradient-x': 'gradient-x 3s ease infinite',
         shimmer: 'shimmer 2s infinite',
+        'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
       },
       keyframes: {
         'gradient-x': {
@@ -26,6 +27,10 @@ module.exports = withMT({
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
+        },
+        'pulse-subtle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.85' },
         },
       },
     },
