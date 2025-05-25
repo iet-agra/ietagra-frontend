@@ -15,7 +15,6 @@ const TNPCell = () => {
         <PlacementGallery />
       </section>
 
-      {/* Placement Video Section */}
       {/* Placement Video Section with Enhanced Heading */}
       <section className="container mx-auto py-12">
         <div className="mb-8 relative">

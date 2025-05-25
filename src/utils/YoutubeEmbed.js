@@ -50,7 +50,12 @@ const YouTubeEmbed = ({ videoId, title, className, showFooter = true }) => {
               role="button"
               aria-label={`Play video: ${title}`}
               tabIndex={0}
-              onKeyPress={(e) => e.key === 'Enter' && setPlayerActive(true)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault(); // Prevent scrolling for Space key
+                  setPlayerActive(true);
+                }
+              }}
             >
               {/* Loading Indicator */}
               {isLoading && !thumbnailError && (
@@ -82,8 +87,7 @@ const YouTubeEmbed = ({ videoId, title, className, showFooter = true }) => {
                 </div>
                 <div className="absolute w-full bottom-0 left-0 bg-gradient-to-t from-black to-transparent h-24 opacity-60"></div>
               </div>
-
-              {/* Video Length Badge (Optional Enhancement) */}
+              {/* Branding Badge (Displays "IET AGRA") */}
               <div className="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-1 py-0.5 rounded">
                 <span className="font-medium">IET AGRA</span>
               </div>
