@@ -16,6 +16,7 @@ import EceDepartment from './components/home/DepartmentWiseData/EceDepartment';
 import CseDepartment from './components/home/DepartmentWiseData/CSEDepartment/index';
 import EeDepartment from './components/home/DepartmentWiseData/EeDepartment';
 import CivilDepartment from './components/home/DepartmentWiseData/CivilDepartment/CivilDepartment';
+import AppliedScience from './components/home/DepartmentWiseData/AppliedScience';
 
 function App() {
   const { access_token } = useSelector((state) => state.auth);
@@ -46,6 +47,7 @@ function App() {
             <Route path="/departments/ece" element={<EceDepartment />} />
             <Route path="/departments/ee" element={<EeDepartment />} />
             <Route path="/departments/civil" element={<CivilDepartment />} />
+            <Route path="/departments/asm" element={<AppliedScience />} />
             <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="tandpcell" element={<SideNavTandP />} />

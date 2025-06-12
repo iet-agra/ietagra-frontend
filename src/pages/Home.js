@@ -76,7 +76,7 @@ const Home = () => {
       description:
         'Strengthen your foundation in mathematics and science to excel in engineering and technology.',
       icon: '📐',
-      path: '/',
+      path: '/departments/asm',
       bgColor: 'from-yellow-500 to-orange-400',
     },
   ];
