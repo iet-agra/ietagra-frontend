@@ -40,7 +40,7 @@ const HeroSection = () => {
         {floatingIcons.map((item, index) => (
           <motion.div
             key={index}
-            className={`absolute text-${item.size} text-white/30 drop-shadow-sm`}
+            className={`absolute ${sizeClassMap[item.size]} text-white/30 drop-shadow-sm`}
             style={{ left: item.left, top: item.top }}
             initial={{ opacity: 0 }}
             animate={{
